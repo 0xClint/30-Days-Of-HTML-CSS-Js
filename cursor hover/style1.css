@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'circular-std-medium-500';
+    src: url("./circular-std-medium-500.ttf");
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'circular-std-medium-500', sans-serif ;
+    cursor: none;
+}
+
+/* body {
+    background-color: black;
+} */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: black; */
+    background-color: white;
+    transition: 0.3s ease-in;
+    z-index: 10;
+}
+
+nav.light{
+    background-color: white;
+    transition: 0.3s ease-in;
+}
+
+li {
+    list-style: none;
+    display:block;
+}
+a {
+    /* display: inline-block; */
+    list-style: none;
+    text-decoration: none;
+    /* color: white; */
+    color: black;
+    font-size: 7rem;
+    transition: 0.3s ease-in;
+    z-index: 10;
+}
+
+
+a.light{
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    font-size: 12px;
+    padding-top: 6px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+
+/* **********************Button ******************/
+
+.btn-container {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 3px;
+    z-index: 1;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 3px;
+    font-weight: 300;
+    font-family: 'circular-std-medium-500';
+    color: black;
+}
+
+.btn-container .line {
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    margin: 0px 6px;
+    transition: 0.3s;
+    
+}
+
+.btn-container .ball {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.btn-container:hover .line {
+    width: 0px;
+    margin: 0px;
+    transition: 0.2s;
+}
+
+.btn-container:hover .btn {
+    text-decoration: underline;
+}
+
+.btn.light{
+    color: black;
+}
+
+li:hover ~ .cursor{
+    transform: scale(3);
+    transition: transform 0.3s;
+}
+/* .btn-container:hover ~ .cursor{
+    transform: scale(3);
+    transition: transform 0.3s;
+} */

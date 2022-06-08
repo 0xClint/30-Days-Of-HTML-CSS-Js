@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+
+}
+body{
+    background-color: black;
+    background: #0f0c29;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    color: white;
+    font-size: 10rem;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+
+}
+
+#discord {
+    top: 8%;
+    left: 20%;
+}
+#dribble {
+    top: 40%;
+    left: 10%;
+}
+#linkedin {
+    top: 20%;
+    left: 43%;
+}
+#snapchat {
+    top: 80%;
+    left: 37%;
+}
+#slack{
+    top: 71%;
+    left: 15%;
+}
+#reddit{
+    top: 78%;
+    left: 76%;
+}
+#messenger{
+    top: 65%;
+    left:57%;
+}
+#line{
+    top: 17%;
+    left:90%;
+}
+#instagram{
+    top: 5%;
+    left:63%;
+}
+#facebook{
+    top: 47%;
+    left:78%;
+}
+#drive{
+    top: 88%;
+    left:92%;
+}
+#behance{
+    top: 13%;
+    left:3%;
+}

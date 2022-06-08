@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img data-speed="13" src="./images/Discord.png" class="layer" id="discord">
+        <img data-speed="-9" src="./images/Behance.png" class="layer" id="behance">
+        <img data-speed="4" src="./images/Dribble.png" class="layer" id="dribble">
+        <img data-speed="-3" src="./images/DriveOctDenoiserBeauty_002 2.png" class="layer" id="drive">
+        <img data-speed="-13" src="./images/Facebook.png" class="layer" id="facebook">
+        <img data-speed="3" src="./images/InstagramOctDenoiserBeauty_001 copy.png" class="layer" id="instagram">
+        <img data-speed="-3" src="./images/LineOctDenoiserBeauty_002 2.png" class="layer" id="line">
+        <img data-speed="-10" src="./images/LinkedIn.png" class="layer" id="linkedin">
+        <img data-speed="10" src="./images/Messenger.png" class="layer" id="messenger">
+        <img data-speed="7" src="./images/RedditOctDenoiserBeauty_002 2.png" class="layer" id="reddit">
+        <img data-speed="-6" src="./images/Slack.png" class="layer" id="slack">
+        <img data-speed="6" src="./images/Snapchat.png" class="layer" id="snapchat">
+        <h2  data-speed="-2" class="layer">Parallax</h2>
+    </section>
+    <script>
+        document.addEventListener("mousemove", parallax);
+        function parallax(e) {
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+
+                const x = (window.innerWidth - e.pageX*speed)/100 ;
+                const y = (window.innerHeight - e.pageY*speed)/100 ;
+
+                layer.style.transform = `translateX(${x}px) translateY(${y}px`;
+            });
+        }
+    </script>
+</body>
+</html>
