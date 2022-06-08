@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Heebo', sans-serif;;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height:85vh;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.clock_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    
+}
+
+.clock{
+    position: relative;
+    width: 200px;
+    height:200px;
+    /* border: black solid 1px; */
+}
+
+.needle{
+    position: absolute;
+    background: black;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom;
+}
+
+#hour{
+    height: 70px;
+    width:3px;
+    left:97px;
+    top : 30px;
+}
+
+#minute{
+    height: 90px;
+    width: 3px;
+    /* background-color: red; */
+    top: 10px;
+    left: 97px;
+}
+
+#second{
+    height: 100px;
+    width: 3px;
+    background-color: red;
+    top: 0px;
+    left: 97px;
+}
+
+.toggle{
+    text-decoration: none;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.center-point{
+    background-color: black;
+    position: absolute;
+    top: 95px;
+    left: 95px;
+    width:10px;
+    height: 10px;
+    border-radius: 50px;
+    border: red solid 3px;
+}
+
+.time {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.date{
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(110, 110, 110);
+}
+
+
+/*********** DARK MODE ***************/
+
+body.active {
+    /* font-family: 'Heebo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 85vh; */
+    /* -webkit-transition: all 700ms ease-in; */
+    background-color: black;
+} 
+
+.time.active {
+    color: white;
+    -webkit-transition: all 700ms ease-in;
+}
+
+#hour.active {
+    background-color: white;
+    -webkit-transition: all 700ms ease-in;
+}
+
+#minute.active {
+    background-color: white;
+    -webkit-transition: all 700ms ease-in;
+}
